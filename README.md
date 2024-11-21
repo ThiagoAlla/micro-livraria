@@ -1,3 +1,34 @@
+# Resolução do Desafio
+### arquivos de teste:
+- [spec1.js](./cypress/cypress/integration/spec1.js)
+- [spec2.js](./cypress/cypress/integration/spec2.js)
+- [spec3.js](./cypress/cypress/integration/spec3.js)
+- [spec4.js](./cypress/cypress/integration/spec4.js)
+- [spec5.js](./cypress/cypress/integration/spec5.js)
+
+### videos gerados:
+- [spec1.js.mp4](./cypress/cypress/videos/spec1.js.mp4)
+- [spec2.js.mp4](./cypress/cypress/videos/spec2.js.mp4)
+- [spec3.js.mp4](./cypress/cypress/videos/spec3.js.mp4)
+- [spec4.js.mp4](./cypress/cypress/videos/spec4.js.mp4)
+- [spec5.js.mp4](./cypress/cypress/videos/spec5.js.mp4)
+
+## observações:
+### Alterações feitas no arquivo [Dockerfile](./cypress/Dockerfile) 
+ #### Motivo da Alteração no Dockerfile
+
+ Foi adicionado a seguinte linha ao [Dockerfile](./cypress/Dockerfile):
+```bash
+ RUN npm install -g npm-run-all
+```
+ #### Contexto do Problema
+
+- O erro ocorreu durante a execução do script `exec` configurado no arquivo **package.json**. O **npm-run-all** não estava disponível no ambiente Docker, causando a falha com a mensagem:
+```ERRO
+sh: npm-run-all: command not found
+```
+- Isso aconteceu porque a ferramenta **npm-run-all** não estava instalada globalmente no container. O script `exec` requisitava essa dependência global para ser executada corretamente.
+<details> <summary>Mini-Roteiro Prático sobre Testes End-to-End usando Cypress</summary>
 # Mini-Roteiro Prático sobre Testes End-to-End usando Cypress
 
 O objetivo deste pequeno roteiro é ter um primeiro contato com testes do tipo end-to-end. Esses testes são chamados também de testes de front-end, testes de sistemas,  testes de interface Web ou testes de interface com o usuário.
