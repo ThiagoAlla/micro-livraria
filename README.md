@@ -29,7 +29,6 @@ sh: npm-run-all: command not found
 ```
 - Isso aconteceu porque a ferramenta **npm-run-all** não estava instalada globalmente no container. O script `exec` requisitava essa dependência global para ser executada corretamente.
 <details> <summary>Mini-Roteiro Prático sobre Testes End-to-End usando Cypress</summary>
-# Mini-Roteiro Prático sobre Testes End-to-End usando Cypress
 
 O objetivo deste pequeno roteiro é ter um primeiro contato com testes do tipo end-to-end. Esses testes são chamados também de testes de front-end, testes de sistemas,  testes de interface Web ou testes de interface com o usuário.
 
