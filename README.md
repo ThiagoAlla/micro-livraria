@@ -1,5 +1,5 @@
 ## Projeto Demo Cypress
-Repositório disponível no meu [GitHub](https://github.com/ThiagoAlla/micro-livraria) na branch Master.
+Repositório disponível no meu [GitHub](https://github.com/ThiagoAlla/micro-livraria/tree/master) na branch Master.
 # Resolução do Desafio1
 ### arquivos de teste:
 - [spec1.js](./cypress/cypress/integration/spec1.js)
